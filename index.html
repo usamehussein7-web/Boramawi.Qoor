@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FANPROJ AFLAAN | Entertainment</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="background-glow"></div>
+
+    <!-- DEVELOPER INTRO -->
+
+    <section class="developer-intro">
+      <div class="developer-card">
+        <div class="developer-image">
+          <img
+            src="./image/WhatsApp Image 2026-04-08 at 9.36.37 AM.jpeg"
+            alt="Website Developer"
+          />
+        </div>
+
+        <div class="developer-info">
+          <span class="welcome">WELCOME TO AFLAAN</span>
+
+          <h1>Hello, I'm <span>MR ABOUBAKAR</span></h1>
+
+          <h2>Website Developer</h2>
+
+          <p>
+            Welcome to my personal media platform. Explore movies, videos and
+            beautiful pictures.
+          </p>
+
+          <button onclick="enterWebsite()">Explore Website →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+      <h2 class="logo">▶ AFLAAN</h2>
+
+      <p class="menu-title"><strong>MAIN MENU </strong></p>
+
+      <button class="nav-btn active" onclick="filterMedia('All')">
+        🏠 Home
+      </button>
+
+      <button class="nav-btn" onclick="filterMedia('Video')">
+        🎬 Movies & Videos
+      </button>
+
+      <button class="nav-btn" onclick="filterMedia('Image')">
+        🖼️ Pictures
+      </button>
+
+      <div class="sidebar-bottom">
+        <h3>MEDIA VERSE</h3>
+
+        <p>Your entertainment universe.</p>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main">
+      <header>
+        <div>
+          <h1>Discover Your Media</h1>
+
+          <p>Welcome to your personal entertainment library.</p>
+        </div>
+
+        <div class="profile">👤 Admin</div>
+      </header>
+
+      <!-- HERO SECTION -->
+
+      <section class="hero">
+        <div class="hero-content">
+          <span class="badge">WELCOME TO AFLAAN</span>
+
+          <h1>
+            Your World.
+            <br />
+            Your <span>Entertainment.</span>
+          </h1>
+
+          <p>
+            Upload, watch and manage your favorite movies, videos and pictures
+            in one place.
+          </p>
+
+          <label class="hero-btn">
+            + Upload Your Media
+
+            <input
+              type="file"
+              id="fileInput"
+              accept="video/*,image/*"
+              multiple
+              hidden
+            />
+          </label>
+        </div>
+
+        <div class="hero-image">🎬</div>
+      </section>
+
+      <!-- STATISTICS -->
+
+      <section class="stats">
+        <div class="stat-card">
+          <span>🎥</span>
+
+          <h2 id="totalMedia">0</h2>
+
+          <p>Total Media</p>
+        </div>
+
+        <div class="stat-card">
+          <span>🎬</span>
+
+          <h2 id="totalVideos">0</h2>
+
+          <p>Videos</p>
+        </div>
+
+        <div class="stat-card">
+          <span>🖼️</span>
+
+          <h2 id="totalImages">0</h2>
+
+          <p>Images</p>
+        </div>
+      </section>
+
+      <!-- COLLECTION -->
+
+      <section class="collection">
+        <div class="collection-header">
+          <div>
+            <h2>My Collection</h2>
+
+            <p>Explore your uploaded media.</p>
+          </div>
+
+          <div class="search-box">
+            🔍
+
+            <input type="text" id="searchInput" placeholder="Search media..." />
+          </div>
+        </div>
+
+        <!-- FILTER BUTTONS -->
+
+        <div class="filters">
+          <button class="filter-btn active" onclick="filterMedia('All')">
+            All
+          </button>
+
+          <button class="filter-btn" onclick="filterMedia('Video')">
+            Videos
+          </button>
+
+          <button class="filter-btn" onclick="filterMedia('Image')">
+            Images
+          </button>
+        </div>
+
+        <!-- MEDIA GRID -->
+
+        <div class="media-grid" id="mediaGrid">
+          <div class="empty">
+            <div>📂</div>
+
+            <h2>No Media Uploaded</h2>
+
+            <p>Upload your first video or picture.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>© 2026 MediaVerse. All Rights Reserved.</footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
